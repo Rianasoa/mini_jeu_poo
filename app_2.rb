@@ -11,7 +11,7 @@ puts "------------------------------------------------"
 
 puts "Quel est le nom de ton joueur ?"
 player3 = HumanPlayer.new(gets.chomp.to_s)
-puts ""
+
 
 player1 = Player.new("Josiane")
 player2 = Player.new("José")
@@ -58,7 +58,7 @@ while user.life_points > 0 && (player1.life_points > 0 || player2.life_points > 
     end
 end
 
-if player3.life_points > 0
+if player3.life_points > 0 
 	puts "La partie est finie"
 	puts "WAOUHHHH Tu As Fait un bon MATCH !"
 else

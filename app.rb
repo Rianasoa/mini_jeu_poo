@@ -16,8 +16,6 @@ puts "#{player1.show_state} #{player2.show_state}"
 puts "Passons à la phase de l'attaque :"
 puts "#{player1.attacks(player2)} #{player2.attacks(player1)}"
 
-puts "Voici l'état de nos joueurs :"
-puts "#{player1.show_state} #{player2.show_state}"
 
 while player1.life_points > 0 && player1.life_points > 0
 
@@ -32,7 +30,9 @@ while player1.life_points > 0 && player1.life_points > 0
 			break
 		end
 			
-		puts "#{player1.show_state} #{player2.show_state}\n\n"
+		puts "Voici l'état de nos joueurs :"
+		puts "#{player1.show_state} #{player2.show_state}"
+
 end
 
 

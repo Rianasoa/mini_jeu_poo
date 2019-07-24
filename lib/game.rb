@@ -1,4 +1,3 @@
-require "pry"
 
 class Game
   attr_accessor :humanplayer, :ennemies
@@ -9,7 +8,9 @@ class Game
     @player_1 = Player.new("Josiane")  
     @player_2 = Player.new("José")
     @player_3 = Player.new("Riana")  
-    @player_4 = Player.new("Walter")
+    @player_4 = Player.new("Jean")
+    @players_left = 10
+    @enemies_in_sight = []
     @ennemies = [@player_1, @player_2, @player_3, @player_4]
   end
 
@@ -81,12 +82,5 @@ class Game
   end
 
 # Game over screen
-  if humanplayer.life_points > 0
-      puts "Vous avez gagné !"
-    elsif humanplayer.life_points < 0
-      puts "Vous avez perdu"
-  end
-  puts
-  puts "Le jeu est terminé"
-  puts
+
 end

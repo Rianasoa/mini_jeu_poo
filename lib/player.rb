@@ -8,7 +8,9 @@ class Player
 	end
 
 	def show_state
-
+		if @life_points < 0
+			@life_points = 0
+		end
 		puts "#{@name} a #{@life_points} de vie"
 
 	end
@@ -55,8 +57,10 @@ class HumanPlayer < Player
 	end
 
 	def show_state
-
-		puts "#{@name} a #{@life_points} de vie et une arme de vie #{@weapon_level}"
+		if @life_points < 0
+			@life_points = 0
+		end
+		puts "#{@name} a #{@life_points} de vie et une arme de vie #{@weapon_level}"	
 
 	end
 
